@@ -47,22 +47,22 @@ ai-disease-prediction-health-recommendation/
 
 
 
-## ⚙️ Installation & Usage
+⚙️ Installation & Usage
 
-### 1️⃣ Clone the repository
+1️⃣ Clone the repository
 ```bash
 git clone https://github.com/Luckybisht2811/ai-disease-prediction-health-recommendation.git
 
-## 2️⃣ Install required dependencies
-```bash
+2️⃣ Install required dependencies
+
 pip install -r requirements.txt
 
-## 3️⃣ Run the application
-```bash
+3️⃣ Run the application
+bash
 python app.py
 
 
-## 🎯 Use Cases
+🎯 Use Cases
 
 Early disease awareness and health guidance
 
@@ -72,7 +72,7 @@ Healthcare AI demonstrations
 
 ML-based decision support systems
 
-## 🚀 Future Enhancements
+🚀 Future Enhancements
 
 Doctor consultation module
 
@@ -82,7 +82,8 @@ Deep Learning-based disease prediction
 
 Real-time health monitoring integration
 
-## 👤 Author
+
+👤 Author
 
 Lalit Singh Bisht
 Software Engineer (Python) | Backend & Data Engineering | Applied ML
