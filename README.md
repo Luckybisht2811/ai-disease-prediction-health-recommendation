@@ -33,6 +33,34 @@ It is designed to assist early health awareness and decision-making using machin
 5. Recommendation of diet and precautions  
 
 ---
+## 🎯 Use Cases
+
+Early disease awareness and health guidance
+
+Educational and academic projects
+
+Healthcare AI demonstrations
+
+ML-based decision support systems
+
+## 🚀 Future Enhancements
+
+Doctor consultation module
+
+Mobile application version
+
+Deep Learning-based disease prediction
+
+Real-time health monitoring integration
+
+
+## 👤 Author
+
+Lalit Singh Bisht
+Software Engineer (Python) | Backend & Data Engineering | Applied ML
+GitHub: https://github.com/Luckybisht2811
+
+---
 
 ## 📂 Project Structure
 ```text
@@ -60,31 +88,3 @@ pip install -r requirements.txt
 3️⃣ Run the application
 bash
 python app.py
-
-
-🎯 Use Cases
-
-Early disease awareness and health guidance
-
-Educational and academic projects
-
-Healthcare AI demonstrations
-
-ML-based decision support systems
-
-🚀 Future Enhancements
-
-Doctor consultation module
-
-Mobile application version
-
-Deep Learning-based disease prediction
-
-Real-time health monitoring integration
-
-
-👤 Author
-
-Lalit Singh Bisht
-Software Engineer (Python) | Backend & Data Engineering | Applied ML
-GitHub: https://github.com/Luckybisht2811
