@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Medical Health Center</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background: #f8f9fc;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 22px;
+            color: #007bff;
+        }
+        .nav-link.active {
+            color: #007bff;
+            font-weight: 600;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(120deg, #4f9cff, #67d1ff);
+            color: white;
+            padding: 80px 0;
+            border-radius: 0 0 30px 30px;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin: 50px 0 25px;
+            text-align: center;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        }
+        .info-card i {
+            font-size: 35px;
+            color: #4f9cff;
+            margin-bottom: 15px;
+        }
+
+        .footer-bar {
+            margin-top: 70px;
+            padding: 20px;
+            background: #4f9cff;
+            color: white;
+            border-radius: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light px-3 sticky-top">
+        <a class="navbar-brand" href="/">AI Health Center</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="/" class="nav-link {% if request.path == '/' %}active{% endif %}">Home</a></li>
+                <li class="nav-item"><a href="/about" class="nav-link {% if request.path == '/about' %}active{% endif %}">About</a></li>
+                <li class="nav-item"><a href="/developer" class="nav-link {% if request.path == '/developer' %}active{% endif %}">Developer</a></li>
+                <li class="nav-item"><a href="/blog" class="nav-link {% if request.path == '/blog' %}active{% endif %}">Blog</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link {% if request.path == '/contact' %}active{% endif %}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Top Hero Banner -->
+    <div class="hero-section">
+        <h1>About Us</h1>
+        <p class="lead mt-3">Empowering Health Through Technology & Innovation</p>
+    </div>
+
+    <div class="container">
+
+        <!-- Who We Are -->
+        <h2 class="section-title">Who We Are</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="info-card text-center">
+                    <i class="fas fa-users"></i>
+                    <h4 class="fw-bold">Our Team</h4>
+                    <p>We are a dedicated team of healthcare experts, data scientists and tech innovators working to make healthcare simple and accessible.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-card text-center">
+                    <i class="fas fa-brain"></i>
+                    <h4 class="fw-bold">Our Expertise</h4>
+                    <p>With experience in AI, Machine Learning & Healthcare systems, we build intelligent tools that give meaningful health insights.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-card text-center">
+                    <i class="fas fa-heartbeat"></i>
+                    <h4 class="fw-bold">Our Purpose</h4>
+                    <p>We aim to empower individuals to understand their health better and make informed decisions effortlessly.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Vision -->
+        <h2 class="section-title">Our Vision</h2>
+        <div class="info-card">
+            <p>
+                We envision a world where accurate healthcare information is accessible to everyone.  
+                Our goal is to eliminate the confusion surrounding disease understanding by offering reliable, AI-powered medical insights.
+            </p>
+        </div>
+
+        <!-- Mission -->
+        <h2 class="section-title">Our Mission</h2>
+        <div class="info-card">
+            <p>
+                Our mission is to blend modern healthcare with technology—delivering precise symptom-based predictions, personalized advice and easy-to-understand medical explanations.
+            </p>
+        </div>
+
+        <!-- How We Do It -->
+        <h2 class="section-title">How Our System Works</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h5 class="fw-bold"><i class="fas fa-robot me-2"></i>AI-Powered Predictions</h5>
+                    <p>Our ML model analyzes symptoms using a large dataset and predicts possible diseases with high accuracy.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h5 class="fw-bold"><i class="fas fa-book-medical me-2"></i>Complete Health Guidance</h5>
+                    <p>We provide detailed descriptions, precautions, medications, diet tips and workout advice for every condition.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Message -->
+        <div class="footer-bar">
+            <h5>Thank you for choosing <strong>Medical Health Center</strong> as your trusted health partner.</h5>
+            <p class="mb-0">Together, we build a healthier future through knowledge, care and innovation.</p>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background: #f2f6ff;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 22px;
+            color: #007bff;
+        }
+
+        .nav-link.active {
+            color: #007bff;
+            font-weight: 600;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, #437ef7, #67d1ff);
+            padding: 80px 30px;
+            text-align: center;
+            border-radius: 0 0 30px 30px;
+            color: white;
+        }
+
+        .hero h1 {
+            font-weight: 700;
+            font-size: 42px;
+        }
+
+        .blog-container {
+            margin-top: -40px;
+            background: #fff;
+            border-radius: 25px;
+            padding: 40px;
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .blog-section-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 40px 0 15px;
+            color: #2a3f5f;
+        }
+
+        .highlight-box {
+            background: #eef5ff;
+            padding: 15px 20px;
+            border-left: 5px solid #437ef7;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        ol li,
+        ul li {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        ul li i {
+            color: #4177f7;
+            margin-right: 10px;
+        }
+
+        .footer-message {
+            margin-top: 45px;
+            padding: 25px;
+            text-align: center;
+            background: linear-gradient(135deg, #4177f7, #67d1ff);
+            border-radius: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light px-3 sticky-top">
+        <a class="navbar-brand" href="/">Lalit Singh Bisht</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="/" class="nav-link {% if request.path == '/' %}active{% endif %}">Home</a></li>
+                <li class="nav-item"><a href="/about" class="nav-link {% if request.path == '/about' %}active{% endif %}">About</a></li>
+                <li class="nav-item"><a href="/developer" class="nav-link {% if request.path == '/developer' %}active{% endif %}">Developer</a></li>
+                <li class="nav-item"><a href="/blog" class="nav-link {% if request.path == '/blog' %}active{% endif %}">Blog</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link {% if request.path == '/contact' %}active{% endif %}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <h1><i class="fas fa-stethoscope"></i> Building a Symptom-Based Disease Diagnosis Web App</h1>
+        <p class="mt-3">Using Flask, Machine Learning & Decision Tree Classifier</p>
+    </div>
+
+    <!-- MAIN BLOG CONTENT -->
+    <div class="container">
+        <div class="blog-container">
+
+            <p>
+                In the era of modern healthcare, timely access to medical insights has become essential.  
+                To bring smart healthcare closer to people, we built an intuitive web application that predicts diseases
+                based on user symptoms using a Machine Learning Decision Tree model.
+            </p>
+
+            <!-- Problem Section -->
+            <h2 class="blog-section-title"><i class="fas fa-circle-exclamation"></i> The Problem</h2>
+            <div class="highlight-box">
+                People often experience symptoms but struggle to identify what illness they might be facing.
+                Many diseases share overlapping symptoms, making self-diagnosis confusing and unreliable.
+            </div>
+
+            <!-- Solution Section -->
+            <h2 class="blog-section-title"><i class="fas fa-lightbulb"></i> The Solution</h2>
+            <p>To address this challenge, we created a web app that:</p>
+
+            <ol>
+                <li><strong>Symptom Input:</strong> Users enter symptoms through a clean, user-friendly interface.</li>
+                <li><strong>Machine Learning Model:</strong> A trained Decision Tree Classifier predicts the most likely disease.</li>
+                <li><strong>Instant Prediction:</strong> User gets real-time disease prediction based on symptoms.</li>
+                <li><strong>Extra Information:</strong> The app suggests precautions, medicines, diet & workout advice.</li>
+            </ol>
+
+            <!-- Key Features -->
+            <h2 class="blog-section-title"><i class="fas fa-star"></i> Key Features</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> <strong>User-Friendly Interface:</strong> Smooth and responsive UI for easy symptom entry.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Accurate Predictions:</strong> ML-driven predictions ensure reliability.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Detailed Information:</strong> Complete disease overview with medications & diet tips.</li>
+                <li><i class="fas fa-check-circle"></i> <strong>Educational Blogs:</strong> Users can read more about major health concerns.</li>
+            </ul>
+
+            <!-- Conclusion -->
+            <h2 class="blog-section-title"><i class="fas fa-check"></i> Conclusion</h2>
+            <p>
+                This Symptom-Based Disease Diagnosis App represents a major step forward in accessible digital healthcare.
+                By combining AI-driven predictions with user-centric design, it empowers individuals to better understand their
+                health conditions instantly.
+            </p>
+
+            <p>
+                As remote healthcare grows, solutions like this bring reliable medical guidance straight to people’s homes —
+                improving awareness, convenience, and overall well-being.
+            </p>
+
+            <div class="footer-message">
+                <h5><strong>Empowering Healthcare with AI & Innovation</strong></h5>
+                <p>Your Health, Our Priority.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - Medical Health Center</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background: #eef3ff;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 22px;
+            color: #007bff;
+        }
+
+        .nav-link.active {
+            color: #007bff;
+            font-weight: 600;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #4177f7, #67d1ff);
+            padding: 70px 20px;
+            text-align: center;
+            border-radius: 0 0 35px 35px;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-weight: 700;
+            font-size: 40px;
+        }
+
+        /* CONTACT CARDS */
+        .contact-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 18px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+            transition: 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 26px rgba(0, 0, 0, 0.18);
+        }
+
+        .icon-box {
+            font-size: 35px;
+            color: #4177f7;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 26px;
+            font-weight: 600;
+            color: #2c3f70;
+            margin-bottom: 15px;
+        }
+
+        .social-icons i {
+            font-size: 30px;
+            margin: 0 12px;
+            cursor: pointer;
+            transition: 0.3s;
+            color: #4177f7;
+        }
+
+        .social-icons i:hover {
+            color: #67d1ff;
+            transform: scale(1.2);
+        }
+
+        .footer-box {
+            background: linear-gradient(135deg, #4177f7, #67d1ff);
+            padding: 30px;
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+            margin-top: 40px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light px-3 sticky-top">
+        <a class="navbar-brand" href="/">AI Health Center</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="/" class="nav-link {% if request.path == '/' %}active{% endif %}">Home</a></li>
+                <li class="nav-item"><a href="/about" class="nav-link {% if request.path == '/about' %}active{% endif %}">About</a></li>
+                <li class="nav-item"><a href="/developer" class="nav-link {% if request.path == '/developer' %}active{% endif %}">Developer</a></li>
+                <li class="nav-item"><a href="/blog" class="nav-link {% if request.path == '/blog' %}active{% endif %}">Blog</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link {% if request.path == '/contact' %}active{% endif %}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <h1><i class="fa-solid fa-envelope-circle-check"></i> Contact Us</h1>
+        <p class="mt-2">We’re here to help and answer any questions you may have.</p>
+    </div>
+
+    <div class="container px-3">
+
+        <!-- Customer Support -->
+        <div class="contact-card">
+            <div class="icon-box"><i class="fa-solid fa-headset"></i></div>
+            <h3 class="section-title">Customer Support</h3>
+            <p>
+                Our dedicated support team is available to help with any inquiries or issues.
+                Whether it's technical assistance or general feedback — we’re always here.
+            </p>
+        </div>
+
+        <!-- Email + Phone -->
+        <div class="contact-card">
+            <div class="icon-box"><i class="fa-solid fa-envelope-open-text"></i></div>
+            <h3 class="section-title">Get in Touch</h3>
+            <p><strong>Email:</strong> lalitsinghbisht282002@gmail.com</p>
+            <p><strong>Phone:</strong> 7014375946</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="contact-card">
+            <div class="icon-box"><i class="fa-solid fa-users"></i></div>
+            <h3 class="section-title">Stay Connected</h3>
+            <p>Follow us for updates, health tips, and important announcements.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/lalitsinghbisht28/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/_lucky_bisht2811/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Location -->
+        <div class="contact-card">
+            <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+            <h3 class="section-title">Location</h3>
+            <p>Vasant Kunj, New Delhi</p>
+        </div>
+
+        <!-- Footer Box -->
+        <div class="footer-box">
+            We're committed to providing the best experience and support.  
+            <br>Reach out anytime — we’d love to assist you!
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
