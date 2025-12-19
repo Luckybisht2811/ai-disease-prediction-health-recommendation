@@ -43,6 +43,8 @@ Healthcare AI demonstrations
 
 ML-based decision support systems
 
+---
+
 ## 🚀 Future Enhancements
 
 Doctor consultation module
@@ -53,12 +55,12 @@ Deep Learning-based disease prediction
 
 Real-time health monitoring integration
 
+---
 
 ## 👤 Author
-
-Lalit Singh Bisht
-Software Engineer (Python) | Backend & Data Engineering | Applied ML
-GitHub: https://github.com/Luckybisht2811
+**Lalit Singh Bisht**  
+Software Engineer (Python) | Backend & Data Engineering | Applied ML  
+GitHub: [https://github.com/Luckybisht2811](https://github.com/Luckybisht2811)
 
 ---
 
